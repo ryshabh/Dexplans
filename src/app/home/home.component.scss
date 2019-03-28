@@ -1,0 +1,179 @@
+body
+{
+
+}
+tr
+{
+	height: 70px;
+	font-size: 17px;
+}
+.tdstyle
+{
+	width: 20px; 
+	font-size: 12px;
+}
+.trstyle
+{
+	height: 6px;
+}
+.google_img
+{
+	background-color: #fff;
+	border: none;
+	border-left: 1px solid #B6B1B1;
+	border-bottom: 1px solid #B6B1B1;
+}
+.font_style
+{
+	color: #fff;
+	font-size: 16px;
+}
+.bari
+{
+	padding: 10px;
+}
+.icon_margin
+{
+	padding-left: 20px;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.mr
+{
+	margin-left: 7px;
+}
+.select_left
+{
+	height: 40px; 
+	font-size: 22px; 
+	margin-left: 10px;
+}
+.select_left_next
+{
+	margin-left: 40px;
+}
+.con
+{
+	margin-top: 40px; 
+	margin-bottom: 40px;
+}
+.color_style
+{
+	color: #fff; 
+	padding: 3px;
+}
+.back
+{
+	background-color: #F7FAF5; 
+	padding: 5px;
+	font-size: 20px;
+}
+.text_none
+{
+	text-decoration: none;
+}
+.m_right
+{
+	margin-right: 20px;
+}
+#divtable
+{
+	overflow: auto;
+	overflow-x: hidden;
+	height: 300px;
+}
+.mrgin
+{
+	margin-left: 40px;
+}
+.g_right
+{
+	margin-right: 40px;
+	text-align: end;
+}
+.line
+{
+	height: 1px;
+	background-color: #F0EBEB;
+	margin-right: 40px;
+	margin-left: 200px;
+}
+.b_color
+{
+	/*background-color: #DEFDCC;*/
+	background-color: #fff;
+	text-align: end;
+}
+.next_b
+{
+	font-size: 20px;
+}
+.pre
+{
+	border: none;
+	background-color: #fff;
+	padding-left: 5px;
+	border-left: 1px solid #F0EBEB;
+	border-right: 1px solid #F0EBEB;
+	border-top: 1px solid #F0EBEB;
+	border-bottom: 1px solid #F0EBEB;
+	margin-top: 18px;
+
+
+}
+
+
+#myModal1{
+  top: 9%;
+  /*background-color: #00000090;*/
+			
+}
+
+.myform{
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1rem;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 4px solid rgba(0, 0, 0, .5);
+	box-shadow: 0px 11px 13px -2px rgba(0, 0, 0, .5);
+	/*border-radius: 1.1rem;*/
+	/*border: 3px;*/
+	outline: 0;
+	max-width: 500px;
+}
+
+.mybtn{
+	border-radius:50px;
+}
+
+#link{
+	color: white;
+	font-weight: bold;
+}
+
+ #logbutton{
+    background-color: #007bff;
+    border-radius:50px;
+}
+
+#logbutton:hover{
+    box-shadow: 0px 11px 13px -2px rgba(0, 0, 0, .1);
+    background-color: #0d77e8;
+}
+
+#logbutton1{
+	background-color: grey;
+	border-radius:50px;
+}
+
+#logbutton1:hover{
+	box-shadow: 0px 11px 13px -2px rgba(0, 0, 0, .1);
+	background-color: grey;
+}
+
