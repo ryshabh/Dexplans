@@ -4,6 +4,7 @@ var today = new Date();
 var currentMonth = today.getMonth();
 var currentYear = today.getFullYear();
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var arr=[];
 
 $(document).ready(function(){
    
@@ -71,6 +72,8 @@ function showCalendar(month, year) {
         // creates a table row
         let row = document.createElement("tr");
 
+        row.style.height="70px";
+        row.style.fontSize="17px";
         //creating individual cells, filing them up with data.
         for (let j = 0; j < 7; j++) {
             if (i === 0 && j < firstDay) {
@@ -78,6 +81,8 @@ function showCalendar(month, year) {
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
                 row.appendChild(cell);
+                cell.style.width="20px";
+                // cell.style.fontSize="12px";
             }
             else if (date > daysInMonth) {
                 break;
@@ -86,11 +91,20 @@ function showCalendar(month, year) {
             else {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode(date);
+                 cell.style.width="20px";
+                // cell.style.fontSize="12px";
+                
                 if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                    cell.classList.add("bg-info");
+                    cell.classList.add("bg-black");
+                    cell.style.backgroundColor="#DCDCDC";
+                    
                 } // color today's date
                 cell.appendChild(cellText);
                 row.appendChild(cell);
+                cell.onclick = function ()
+                {
+                    getval(cell.innerHTML,month,year);   
+                };
                 date++;
             }
 
@@ -120,4 +134,33 @@ function getValue(){
     // document.getElementById("demo").innerHTML = retVal;
    
   }
+}
+
+function getval(cel,m,y)
+{
+    console.log("value", cel, m+1, y);
+    document.getElementById("task").style.visibility = 'visible';
+    document.getElementById("task").focus();
+    document.getElementById("t2").style.visibility = 'visible';
+    document.getElementById("t3").style.visibility = 'visible';
+    document.getElementById("t4").style.visibility = 'visible';
+    document.getElementById("t5").style.visibility = 'visible';
+
+    document.getElementById("t6").style.visibility = 'visible';
+    document.getElementById("t7").style.visibility = 'visible';
+    document.getElementById("t8").style.visibility = 'visible';
+    document.getElementById("t9").style.visibility = 'visible';
+    document.getElementById("t10").style.visibility = 'visible';
+    document.getElementById("t11").style.visibility = 'visible';
+    document.getElementById("t12").style.visibility = 'visible';
+    document.getElementById("t13").style.visibility = 'visible';
+
+
+}
+
+function submitData()
+{
+        alert("values of array",arr);
+        
+       console.log("value", document.getElementById('task').value)
 }

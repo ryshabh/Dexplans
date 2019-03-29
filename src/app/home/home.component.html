@@ -1,252 +1,258 @@
-        <div class="container-fluid con">
-                <p class="g_right">
-                    <button type="button" class="btn btn-primary m_right">
-                        <span class="fa fa-share-alt color_style">
-                            <a class="font_style" >Share</a>
-                        </span>
-                    </button>
-                    <a href="">
-                        <button type="" class="google_img">
-                            <img src="../../assets/img/g.jpg" alt="" width="25" height="25">
-                        </button>
-                    </a>
-                    <button type="button" class="btn btn-primary">
-                        <a class="font_style">Sign in</a>
-                    </button>
-                </p>
-                <div class="line"></div>
-                <div class="row">
-                    <div class="col-3 mrgin">
-                        <p>
-                            <button class="btn btn-primary icon_margin"> New Project
-                                 <i class="fa fa-angle-down icon_margin"></i>
-                            </button>
-                            <i class="fa fa-plus mr" onclick="getpopup();"></i><i class="fa fa-bars bari"></i>
-                        </p>
-                    </div>
-                    <div class="col-sm-10"></div>
-                </div> 
-            <div class="row">
-                <div class="col-2 mrgin">
-                    <h5 align="center" class="back">Tasks</h5>
-                    <div id="divtable">
-                     <table class="table table-bordered">
-                        <tbody>
-                            <tr class="trstyle">
-                                <td class="tdstyle">1</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">2</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">3</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">4</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">5</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">6</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">7</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">8</td>
-                                <td></td>
-                            </tr>
-                                <tr class="trstyle">
-                                <td class="tdstyle">9</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">10</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">11</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">12</td>
-                                <td></td>
-                            </tr>
-                            <tr class="trstyle">
-                                <td class="tdstyle">13</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table> 
-                    </div> 
+<div class="container-fluid con">
+	<p class="g_right">
+		<button type="button" class="new_project m_right">
+			<span class="fa fa-share-alt color_style">
+				<a class="font_style" >Share</a>
+			</span>
+		</button>
+		<a href="">
+			<button type="" class="google_img">
+				<img src="../../assets/img/g.jpg" alt="" width="25" height="25">
+			</button>
+		</a>
+		<button type="button" class="new_project m_right">
+			<a class="font_style">Sign in</a>
+		</button>
+	</p>
+	<div class="line"></div>
+	<div class="row">
+		<div class="col-3 mrgin">
+			<p>
+				<button class="new_project m_right"> New Project
+					 <i class="fa fa-angle-down icon_margin"></i>
+				</button>
+				<i class="fa fa-plus mr" onclick="getpopup();"></i>
+				<i class="fa fa-bars bari"></i>
+			</p>
+		</div>
+		<div class="col-sm-10"></div>
+	</div> 
+	<div class="row">
+		<div class="col-2 mrgin">
+			<h5 align="center" class="back">Tasks</h5>
+			<div id="divtable">
+				<table class="table table-bordered">
+					<tbody>
+						<tr class="trstyle">
+							<td class="tdstyle">1</td>
+							<td ><input id="task" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">2</td>
+							<td><input id="t2" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">3</td>
+							<td><input id="t3" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">4</td>
+							 <td><input id="t4" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">5</td>
+							<td><input id="t5" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">6</td>
+							<td><input id="t6" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">7</td>
+							<td><input id="t7" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">8</td>
+							<td><input id="t8" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">9</td>
+							<td><input id="t9" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">10</td>
+							<td><input id="t10" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">11</td>
+							<td><input id="t11" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">12</td>
+							<td><input id="t12" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">13</td>
+							<td><input id="t13" type="text" class="hidden_text"></td>
+						</tr>
+					</tbody>
+				</table> 
+			</div> 
+		</div>
+		<div class="col-9 mrgin main_top">
+			<div class="row" >
+				<div class="col-8">
+					<div class="row" >
+						<div class="col-sm-1">
+							<button class="pre" id="previous" onclick="previous()">
+								<i class="fa fa-angle-double-left next_b"></i>
+							</button>
+						</div> 
+						<div class="col-sm-4">
+							<h3 class="card-header b_color" id="monthAndYear" align="center"></h3> 
+						</div>
+									 
+						<div class="col-sm-1">
+							<button class="pre" id="next" onclick="next()">
+								<i class="fa fa-angle-double-right next_b"></i>
+							</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h3 class="card-header text_none b_color" onclick="jump_to_today
+					()">Today</h3> 
+			</div>
+		</div>
+			<table class="table table-bordered table-responsive-sm" id="calendar">
+				<thead>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+					</tr>
+				</thead>
+			<tbody id="calendar-body">
+			</tbody>
+			</table>
+			<!--  <div class="form-inline">
+				<button class="btn btn-outline-primary col-sm-5 select_left_next" id="previous" onclick="previous()" hidden=""><h2>Previous</h2>
+				</button>
+				<button class="btn btn-outline-primary col-sm-5 select_left_next" id="next" onclick="next()" hidden=""><h2>Next</h2>
+					</button>
+			</div><br/> -->
+			<form class="form-inline">
+				<select class="form-control col-sm-5 select_left" name="month" id="month" onchange="jump()"    hidden="" >
+					<option value=0>Jan</option>
+					<option value=1>Feb</option>
+					<option value=2>Mar</option>
+					<option value=3>Apr</option>
+					<option value=4>May</option>
+					<option value=5>Jun</option>
+					<option value=6>Jul</option>
+					<option value=7>Aug</option>
+					<option value=8>Sep</option>
+					<option value=9>Oct</option>
+					<option value=10>Nov</option>
+					<option value=11>Dec</option>
+				</select>
+				<label for="year"></label>
+				<select class="form-control col-sm-5 select_left" name="year" id="year" onchange="jump()" hidden="">
+					<option value=1990>1990</option>
+					<option value=1991>1991</option>
+					<option value=1992>1992</option>
+					<option value=1993>1993</option>
+					<option value=1994>1994</option>
+					<option value=1995>1995</option>
+					<option value=1996>1996</option>
+					<option value=1997>1997</option>
+					<option value=1998>1998</option>
+					<option value=1999>1999</option>
+					<option value=2000>2000</option>
+					<option value=2001>2001</option>
+					<option value=2002>2002</option>
+					<option value=2003>2003</option>
+					<option value=2004>2004</option>
+					<option value=2005>2005</option>
+					<option value=2006>2006</option>
+					<option value=2007>2007</option>
+					<option value=2008>2008</option>
+					<option value=2009>2009</option>
+					<option value=2010>2010</option>
+					<option value=2011>2011</option>
+					<option value=2012>2012</option>
+					<option value=2013>2013</option>
+					<option value=2014>2014</option>
+					<option value=2015>2015</option>
+					<option value=2016>2016</option>
+					<option value=2017>2017</option>
+					<option value=2018>2018</option>
+					<option value=2019>2019</option>
+					<option value=2020>2020</option>
+					<option value=2021>2021</option>
+					<option value=2022>2022</option>
+					<option value=2023>2023</option>
+					<option value=2024>2024</option>
+					<option value=2025>2025</option>
+					<option value=2026>2026</option>
+					<option value=2027>2027</option>
+					<option value=2028>2028</option>
+					<option value=2029>2029</option>
+					<option value=2030>2030</option>
+				</select>
+			</form>
+		</div>
+	</div>
+	
+</div>
+<div class="container-fluid">
+		<div class="row row_back">
+		 <div class="col-sm-3">         
                 </div>
-                <div class="col-9 mrgin">
-                    <div class="row" >
-                        <div class="col-sm-8">
-                            <div class="row" >
-                                <div class="col-sm-1">
-                                    <button class="pre" id="previous" onclick="previous()">
-                                        <i class="fa fa-angle-double-left next_b"></i>
-                                    </button>
-                                </div> 
-                                <div class="col-sm-4">
-                                    <h3 class="card-header b_color" id="monthAndYear" align="center"></h3> 
-                                </div>
-                                 
-                                <div class="col-sm-1">
-                                    <button class="pre" id="next" onclick="next()">
-                                        <i class="fa fa-angle-double-right next_b"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3 class="card-header text_none b_color" onclick="jump_to_today
-                            ()">Today</h3> 
-                        </div>
-                    </div>
-                    <table class="table table-bordered table-responsive-sm" id="calendar">
-                        <thead>
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                            </tr>
-                        </thead>
-                        <tbody id="calendar-body">
-                        </tbody>
-                    </table>
-                   <!--  <div class="form-inline">
-                        <button class="btn btn-outline-primary col-sm-5 select_left_next" id="previous" onclick="previous()" hidden=""><h2>Previous</h2>
-                        </button>
-                        <button class="btn btn-outline-primary col-sm-5 select_left_next" id="next" onclick="next()" hidden=""><h2>Next</h2>
-                        </button>
-                    </div><br/> -->
-                    <form class="form-inline">
-                        <select class="form-control col-sm-5 select_left" name="month" id="month" onchange="jump()"    hidden="" >
-                            <option value=0>Jan</option>
-                            <option value=1>Feb</option>
-                            <option value=2>Mar</option>
-                            <option value=3>Apr</option>
-                            <option value=4>May</option>
-                            <option value=5>Jun</option>
-                            <option value=6>Jul</option>
-                            <option value=7>Aug</option>
-                            <option value=8>Sep</option>
-                            <option value=9>Oct</option>
-                            <option value=10>Nov</option>
-                            <option value=11>Dec</option>
-                        </select>
-                        <label for="year"></label>
-                        <select class="form-control col-sm-5 select_left" name="year" id="year" onchange="jump()" hidden="">
-                            <option value=1990>1990</option>
-                            <option value=1991>1991</option>
-                            <option value=1992>1992</option>
-                            <option value=1993>1993</option>
-                            <option value=1994>1994</option>
-                            <option value=1995>1995</option>
-                            <option value=1996>1996</option>
-                            <option value=1997>1997</option>
-                            <option value=1998>1998</option>
-                            <option value=1999>1999</option>
-                            <option value=2000>2000</option>
-                            <option value=2001>2001</option>
-                            <option value=2002>2002</option>
-                            <option value=2003>2003</option>
-                            <option value=2004>2004</option>
-                            <option value=2005>2005</option>
-                            <option value=2006>2006</option>
-                            <option value=2007>2007</option>
-                            <option value=2008>2008</option>
-                            <option value=2009>2009</option>
-                            <option value=2010>2010</option>
-                            <option value=2011>2011</option>
-                            <option value=2012>2012</option>
-                            <option value=2013>2013</option>
-                            <option value=2014>2014</option>
-                            <option value=2015>2015</option>
-                            <option value=2016>2016</option>
-                            <option value=2017>2017</option>
-                            <option value=2018>2018</option>
-                            <option value=2019>2019</option>
-                            <option value=2020>2020</option>
-                            <option value=2021>2021</option>
-                            <option value=2022>2022</option>
-                            <option value=2023>2023</option>
-                            <option value=2024>2024</option>
-                            <option value=2025>2025</option>
-                            <option value=2026>2026</option>
-                            <option value=2027>2027</option>
-                            <option value=2028>2028</option>
-                            <option value=2029>2029</option>
-                            <option value=2030>2030</option>
-                        </select>
-                    </form>
-                    <div class="row" style="background-color: #EBFCED; ">
-                        <div class="col-sm-3">
-                            Terms and conditions
-                        </div>
-                        <div class="col-sm-3">
-                            Privacy and Policy
-                        </div>
-                        <div class="col-sm-3">
-                            Contact Us
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="col-sm-3">
+				Terms and conditions
+			</div>
+			<div class="col-sm-3">
+				Privacy and Policy
+			</div>
+			<div class="col-sm-3">
+				Contact Us
+			</div>
+		</div>
+	</div>
 
 
 <button class="link-modal" id="linkmodal1"  [hidden]="true" data-toggle="modal" data-target="#myModal1">Open Modal</button>
 <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog">
-        <div class="row">
-            <div class="col-md-11 mx-auto">
-                <div id="first">
-                    <div class="myform form "  >
-                        <div class="logo mb-3">
-                            <div class="col-md-12 text-center" >
-                                <h3 style="font-weight: bold;">Enter the name of  project</h3>
-                            </div>
-                            <div class="col-md-12 text-center" style="height: 20px;">
-                           
-                            </div>
-                            <div class="col-md-12 text-center" >
-                                <input type="text" name="text"  class="form-control"  id="newproject"  aria-describedby="emailHelp" placeholder="Enter New Project">
-                            </div>
+	<div class="modal-dialog">
+		<div class="row">
+			<div class="col-md-11 mx-auto">
+				<div id="first">
+					<div class="myform form "  >
+						<div class="logo mb-3">
+							<div class="col-md-12 text-center" >
+								<h3 style="font-weight: bold;">Enter the name of  project</h3>
+							</div>
+							<div class="col-md-12 text-center" style="height: 20px;">
+						   
+							</div>
+							<div class="col-md-12 text-center" >
+								<input type="text" name="text"  class="form-control"  id="newproject"  aria-describedby="emailHelp" placeholder="Enter New Project">
+							</div>
 
-                            <div class="col-md-12 text-center" style="height: 20px;">
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <button type="submit" id="logbutton" class=" btn btn-block mybtn btn-primary tx-tfm " data-dismiss="modal" onclick="getValue();"><a id="link"
-                                    href="#">Save</a></button>
-                                </div>
-                                <div class="col-md-6 text-center">
-                                    <button type="submit" id="logbutton1" class=" btn btn-block mybtn btn-default tx-tfm " data-dismiss="modal"><a id="link"
-                                    href="#">Cancel</a></button>
-                                </div>
-                            </div>
-                         
-                            <div class="col-md-12 text-center" style="height: 20px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							<div class="col-md-12 text-center" style="height: 20px;">
+							</div>
+							<div class="row">
+								<div class="col-md-6 text-center">
+									<button type="submit" id="logbutton" class=" btn btn-block mybtn btn-primary tx-tfm " data-dismiss="modal" onclick="getValue();"><a id="link"
+									href="#">Save</a></button>
+								</div>
+								<div class="col-md-6 text-center">
+									<button type="submit" id="logbutton1" class=" btn btn-block mybtn btn-default tx-tfm " data-dismiss="modal"><a id="link"
+									href="#">Cancel</a></button>
+								</div>
+							</div>
+						 
+							<div class="col-md-12 text-center" style="height: 20px;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
