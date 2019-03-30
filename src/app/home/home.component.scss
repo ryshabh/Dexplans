@@ -9,16 +9,17 @@ tr
 }
 .tdstyle
 {
-	width: 20px; 
+	/*width: 40px; */
 	font-size: 12px;
 }
 .table_cursor
 {
 	cursor: pointer;
+	width: 930px;
 }
 .trstyle
 {
-	height: 6px;
+	height: 4px;
 }
 .google_img
 {
@@ -38,7 +39,7 @@ tr
 }
 .icon_margin
 {
-	padding-left: 20px;
+	padding-left: 10px;
 	font-size: 16px;
 	margin-top: 5px;
 }
@@ -76,15 +77,15 @@ tr
 {
 	text-decoration: none;
 }
-.m_right
+/*.m_right
 {
 	margin-right: 20px;
-}
+}*/
 #divtable
 {
 	overflow: auto;
 	overflow-x: hidden;
-	height: 300px;
+	height: 500px;
 }
 .mrgin
 {
@@ -115,13 +116,14 @@ tr
 .pre
 {
 	border: none;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	padding-left: 5px;
 	border-left: 1px solid #F0EBEB;
 	border-right: 1px solid #F0EBEB;
 	border-top: 1px solid #F0EBEB;
 	border-bottom: 1px solid #F0EBEB;
 	margin-top: 18px;
+	background-color: #f8fbff;
 
 
 }
@@ -137,6 +139,8 @@ tr
 	font-size: 15px;
 	border: none;
 	border-radius: 2px;
+	padding: 3px 10px 3px 10px;
+	margin-left: 2px;
 }
 .main_top
 {
@@ -214,3 +218,126 @@ tr
 }
 /*end popup styling*/
 
+
+
+/*header styling*/
+
+.top {
+  display: table;
+}
+.top-row {
+  display: table-row;
+}
+.top-cell {
+  display: table-cell;
+  padding: 2px 10px 2px 10px;
+  border: 1px solid #d9d9d9;
+  /*width: 10px;*/
+}
+
+.top-cell1 {
+  display: table-cell;
+ 
+  /*border: 1px solid #d9d9d9;*/
+ /* padding-left: 25px;
+  padding-right: 17px;*/
+  /*width: 10px;*/
+}
+
+.top-cell2{
+  display: table-cell;
+ 
+  border: 1px solid #d9d9d9;
+  /*padding-left: 25px;*/
+  width: 1015px;
+  height: 5px;
+}
+
+.down {
+  display: table;
+}
+.down-row {
+  display: table-row;
+  border: 1px solid #d9d9d9;
+}
+.down-cell {
+  display: table-cell;
+  padding: 5px 10px 5px 10px;
+  border: 0px solid #d9d9d9;
+  background-color: #F8FAFF;
+  outline: none;
+  /*width: 10px;*/
+}
+#home{
+  outline: none;
+}
+
+.down-cell1 {
+  display: table-cell;
+  background-color: #F8FAFF;
+  border: 0px solid #d9d9d9;
+  padding-left: 960px;
+  padding-right: 7px;
+  /*width: 10px;*/
+}
+
+.file{
+  background: transparent;
+  border: 0px;
+
+}
+.file1{
+  border: 0px;
+}
+
+.file2{
+  background: transparent;
+  border: 0px;
+
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.file:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*header styling*/
+
+.card-header
+{
+	background-color: #f8fbff; 	
+	padding: 4px;
+	font-size: 20px;
+	text-align: right;
+	float: right;
+	/*padding-top: 20px;*/
+}
+
+.form-inline
+{
+	background-color: #f8fbff; 
+	margin-top: 20px;
+	
+}
+
+.disp
+{
+	display: none;
+}
+#monthAndYear
+{
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100px;
+}
+.mytable
+{
+	width: 280px; 
+	text-align: center;
+}

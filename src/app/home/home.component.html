@@ -1,5 +1,5 @@
-<div class="container-fluid con">
-	<p class="g_right">
+
+	<!-- <p class="g_right">
 		<button type="button" class="new_project m_right">
 			<span class="fa fa-share-alt color_style">
 				<a class="font_style" >Share</a>
@@ -26,12 +26,43 @@
 			</p>
 		</div>
 		<div class="col-sm-10"></div>
-	</div> 
+	</div>  -->
+<div class="top">
+	<div class="top-row" >
+		<div class="top-cell1">
+			<button class="new_project">New Project<span class="icon_margin"><i class="fa fa-angle-down"></i></span>
+				</button>
+		</div>
+		   
+		 <div class="top-cell">
+			<button class="file2" id="table2" type="submit" onclick="getpopup();"><img src="../../assets/img/Group 3.svg"></button>
+		</div>
+		<div class="top-cell">
+			<img src="../../assets/img/menu.svg">
+		</div>
+	</div>
+</div> 
+<div class="down">
+	<div class="down-row">
+		<div class="down-cell">
+			<span style="margin-left: 15px;">File</span>
+		</div>
+		<div class="down-cell" id="bg-change1" onclick="myFunc();">
+			<button class="file" id="home">Home</button>
+		</div>
+		<div class="down-cell1">
+			<img src="../../assets/img/notification.svg" style="margin-right: 30px;">
+			<img src="../../assets/img/user-png-12.png" style="height: 15px; width: auto; border-radius: 25px; margin-right: 30px;">
+			<button  style="  background-color: #398AFF; border: 0px; border-radius: 1px; color: white; width: 75px; height: 21px;"><img src="../../assets/img/share.svg"> Share</button>
+		</div>
+	</div>
+</div>
+<div class=" con">
 	<div class="row">
-		<div class="col-2 mrgin">
+		<div class="col-3 mrgin">
 			<h5 align="center" class="back">Tasks</h5>
 			<div id="divtable">
-				<table class="table table-bordered">
+				<table class="table table-bordered mytable">
 					<tbody>
 						<tr class="trstyle">
 							<td class="tdstyle">1</td>
@@ -85,14 +116,24 @@
 							<td class="tdstyle">13</td>
 							<td><input id="t13" type="text" class="hidden_text"></td>
 						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">14</td>
+							<td><input id="t14" type="text" class="hidden_text"></td>
+						</tr>
+						<tr class="trstyle">
+							<td class="tdstyle">15</td>
+							<td><input id="t15" type="text" class="hidden_text"></td>
+						</tr>
 					</tbody>
 				</table> 
 			</div> 
+			<br>
+			<button type="submit" class="btn btn-primary" onclick="submitData()">Submit Task</button>
 		</div>
-		<div class="col-9 mrgin main_top">
-			<div class="row" >
+		<div class="col-8  main_top">
+			<div class="form-inline">
 				<div class="col-8">
-					<div class="row" >
+					<div class="form-inline" >
 						<div class="col-sm-1">
 							<button class="pre" id="previous" onclick="previous()">
 								<i class="fa fa-angle-double-left next_b"></i>
@@ -129,12 +170,6 @@
 			<tbody id="calendar-body">
 			</tbody>
 			</table>
-			<!--  <div class="form-inline">
-				<button class="btn btn-outline-primary col-sm-5 select_left_next" id="previous" onclick="previous()" hidden=""><h2>Previous</h2>
-				</button>
-				<button class="btn btn-outline-primary col-sm-5 select_left_next" id="next" onclick="next()" hidden=""><h2>Next</h2>
-					</button>
-			</div><br/> -->
 			<form class="form-inline">
 				<select class="form-control col-sm-5 select_left" name="month" id="month" onchange="jump()"    hidden="" >
 					<option value=0>Jan</option>
@@ -197,23 +232,22 @@
 			</form>
 		</div>
 	</div>
-	
 </div>
 <div class="container-fluid">
-		<div class="row row_back">
-		 <div class="col-sm-3">         
-                </div>
-			<div class="col-sm-3">
-				Terms and conditions
-			</div>
-			<div class="col-sm-3">
-				Privacy and Policy
-			</div>
-			<div class="col-sm-3">
-				Contact Us
-			</div>
+	<div class="row row_back">
+		<div class="col-sm-3">         
+		</div>
+		<div class="col-sm-3">
+			Terms and conditions
+		</div>
+		<div class="col-sm-3">
+			Privacy and Policy
+		</div>
+		<div class="col-sm-3">
+			Contact Us
 		</div>
 	</div>
+</div>
 
 
 <button class="link-modal" id="linkmodal1"  [hidden]="true" data-toggle="modal" data-target="#myModal1">Open Modal</button>

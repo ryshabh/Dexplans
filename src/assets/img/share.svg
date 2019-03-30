@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="attachment" transform="translate(-1401.000000, -12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="share" transform="translate(1401.000000, 12.000000)">
+                <circle id="Oval" cx="9" cy="2" r="2"></circle>
+                <circle id="Oval" cx="9" cy="9" r="2"></circle>
+                <circle id="Oval" cx="2" cy="6" r="2"></circle>
+                <path d="M8.51944196,10 C8.4417898,10 8.36301766,9.98029696 8.29009432,9.93881689 L1.25012955,5.93884144 C1.09594522,5.85121479 1,5.68283161 1,5.4999304 C1,5.3170292 1.09594522,5.1485164 1.25012955,5.06101936 L8.28996987,1.06117354 C8.52267747,0.92882618 8.81412195,1.01839722 8.94117781,1.26066678 C9.06810923,1.50306596 8.98224386,1.80664826 8.74966071,1.93899562 L2.48235983,5.4999304 L8.74978515,9.06086519 C8.98249274,9.19321255 9.06823367,9.49692447 8.94130226,9.73919403 C8.85406802,9.9055032 8.68943051,9.99974075 8.51944196,10 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
