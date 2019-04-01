@@ -7,6 +7,16 @@ tr
 	height: 70px;
 	font-size: 17px;
 }
+td:hover
+{
+	 border: 2px solid black;
+	border-color: #aac8fc; 
+
+}
+textarea{
+	width: 100px;
+	height: 100px;
+}
 .tdstyle
 {
 	/*width: 40px; */
@@ -89,7 +99,7 @@ tr
 }
 .mrgin
 {
-	margin-left: 40px;
+	margin-left: 20px;
 }
 .g_right
 {

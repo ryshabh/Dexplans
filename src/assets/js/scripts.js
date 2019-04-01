@@ -7,6 +7,10 @@ var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oc
 
 var cy;
 var data_arr = [];
+var txt_id;
+var sheet_data=[];
+
+var d=1;
 
 $(document).ready(function(){
    
@@ -70,6 +74,7 @@ function showCalendar(month, year) {
 
     // creating all cells
     let date = 1;
+    let idv=1;
     for (let i = 0; i < 6; i++) {
         // creates a table row
         let row = document.createElement("tr");
@@ -81,11 +86,14 @@ function showCalendar(month, year) {
             if (i === 0 && j < firstDay) {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode("");
+                let cellInput = document.createElement("textarea");
                 // date=0;
                 cell.appendChild(cellText);
                 row.appendChild(cell);
                 cell.style.width="20px";
                 // cell.style.fontSize="12px";
+
+                //cell.appendChild(cellInput);
             }
             else if (date > daysInMonth) {
                 break;
@@ -95,21 +103,34 @@ function showCalendar(month, year) {
                 let cell = document.createElement("td");
                 let cellText = document.createTextNode(date);
                  cell.style.width="20px";
+                let cellInput = document.createElement("textarea");
+                //let pid=document.createElement("id");
+                cellInput.setAttribute("id",idv);
                 // cell.style.fontSize="12px";
                 
                 if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
                     cell.classList.add("bg-black");
+                    cellInput.classList.add("bg-black");
                     cell.style.backgroundColor="#DCDCDC";
+                    cellInput.style.backgroundColor="#DCDCDC";
+
                     
                 } // color today's date
                 cell.appendChild(cellText);
                 row.appendChild(cell);
+                cellInput.style.height="100px";
+                 cellInput.style.width="100px";
+                cell.appendChild(cellInput);
                 cell.onclick = function ()
                 {
-                    getval(cell.innerHTML,month,year);   
+                    getval(cell.innerHTML,month,year,cellInput.id);   
                 };
-                date++;
+                 date++;
+               
             }
+
+           
+            idv++;
 
 
         }
@@ -140,15 +161,18 @@ function getValue(){
 }
 
 
-function getval(cel,m,y)
+function getval(cel,m,y, tx_id)
 {
     // var mm=cel.concat("-");
     // var cm=mm.concat(m+1);
+    sheet_data = [];
+    d=1;
     var cm = m+1;
+    txt_id = tx_id
     // var ss=cm.concat("-");
     // cy=ss.concat(y);
     cy = cel+'-'+cm+'-'+y;
-    console.log("value", cy);
+    // console.log("value", cy);
     document.getElementById("task").style.visibility = 'visible';
     document.getElementById("task").focus();
     document.getElementById("t2").style.visibility = 'visible';
@@ -179,6 +203,23 @@ function getval(cel,m,y)
     document.getElementById("t12").style.visibility = 'visible';
     document.getElementById("t13").style.visibility = 'visible';
 }
+
+function inputTextValue(b)
+ { 
+    console.log("inputTextValue",txt_id )
+    
+      let br = document.createElement("br");
+      var comma=".";
+      var data=document.getElementById(b.id).value;
+      sheet_data.push(d+comma+data);
+      d++;
+      //document.getElementById(txt_id).value=d;
+      document.getElementById(txt_id).value=sheet_data.join("\n");
+      //d++;
+      //document.write("\n");       
+}
+
+
 function submitData()
 { 
     var arr=[];
