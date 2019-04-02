@@ -211,10 +211,13 @@ function inputTextValue(b)
       let br = document.createElement("br");
       var comma=".";
       var data=document.getElementById(b.id).value;
-      sheet_data.push(d+comma+data);
-      d++;
-      //document.getElementById(txt_id).value=d;
-      document.getElementById(txt_id).value=sheet_data.join("\n");
+     if(data.length>1)
+      {
+        sheet_data.push(d+comma+data);
+        d++;
+         document.getElementById(txt_id).value=sheet_data.join("\n"); 
+      } 
+     
       //d++;
       //document.write("\n");       
 }
